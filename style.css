@@ -1,0 +1,69 @@
+/*-----------------------------capitulo10P_A.html-----------------------------*/
+body{
+    color:#333;
+    font-family: sans-serif;
+}
+
+
+.formulario-de-notas{
+    margin:50px 18%;
+    text-align: center;
+    background:#26a;
+    padding:40px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+h2{
+    margin:0;
+    flex-grow: 1;
+    color:white;
+}
+input{
+    width: 35px;
+    border:none;
+}
+
+input[type="button"]{
+    width:auto;
+    margin-left: 6px;
+}
+
+/*      Modal       */
+
+.Propio-modal-background{
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;   
+    opacity:0;
+}
+
+.Propio-modal{
+    background:#fff;
+    width:500px;
+    margin:auto;
+    padding-top:23px;
+    text-align: center;
+}
+
+.resultado{
+    font-size:23px;
+    margin-bottom:5px;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity:0;
+        display:flex;
+    }
+    100% {
+        opacity:1;
+        
+    }
+}
